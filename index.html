@@ -11,6 +11,20 @@
       <a class="logo button" href="#">
          <img src="assets/img/3ae21a385ab1edee756a77763a1f44b2.jpeg" alt="logo" class="logoimg">
       </a>
+      <div class="hamburger-menu">
+         <input id="menu__toggle" type="checkbox" />
+         <label class="menu__btn" for="menu__toggle">
+           <span></span>
+         </label>
+         <ul class="menu__box">
+           <li><a class="menu__item" href="#">ГОЛОВНА</a></li>
+           <li><a class="menu__item" href="#">ПРО НАС</a></li>
+           <li><a class="menu__item" href="index.html">ЗАБРОНЮВАТИ</a></li>
+           <li><a class="menu__item" href="#">КОНТАКТИ</a></li>
+           <li><a class="menu__item" href="index2.html">ОСОБИСТИЙ КАБІНЕТ</a></li>
+           <li><a class="menu__item language" href="#"><img src="assets/img/Vector.svg" alt="#" class="langImg menuImg"> <b>UA</b></a></li>
+         </ul>
+      </div>
       <div class="headText">
          <a class="capital text button" href="#">
             <b>ГОЛОВНА</b>
@@ -33,7 +47,7 @@
          </a>
          <div class="line"></div>
          <a class="language button" href="#">
-            <img src="assets/img/Vector.svg" alt="#"> <b>UA</b>
+            <img src="assets/img/Vector.svg" alt="#" class="langImg"> <b>UA</b>
          </a>
       </div>
    </div>
@@ -43,86 +57,21 @@
    <div class="bodyCapital">
       <div class="chois">
          <div class="choisText">Оберіть місце розташування</div>
-         <img src="assets/img/Polygon 1.png" alt="triangle" class="triangle button">
+         <img src="assets/img/Polygon 1.png" alt="triangle" class="triangle button" onclick="showList()">
       </div>
-
-      <div class="build">
-         <img src="assets/img/image 5.png" alt="#" class="buildImg">
-         <div class="buildTextContent">
-            <div class="buildTitle">
-               Незвідана Бакота
-            </div>
-            <div class="lineHorizontal"></div>
-            <div class="buildText">
-               У Хмельницькій області розташований загублений край -
-               Бакота. Мальовничий каньйон з давньою історією захоплює
-               своїми просторами та незвичною атмосферою. Бджільництво,
-               свіжий мед із польових трав, дотик до природи.
-            </div>
-         </div>
-         <img src="assets/img/emojione_star.png" alt="star" class="star button">
-         <div class="details button">Детальніше</div>
+      <div class="list">
+         <a href="#" class="list1 button">Бакота</a>
+         <div class="shadowLine"></div>
+         <a href="#" class="list2 button">Карпати</a>
+         <div class="shadowLine"></div>
+         <a href="#" class="list3 button">Київ</a>
+         <div class="shadowLine"></div>
+         <a href="#" class="list4 button">Одеська область</a>
       </div>
-
-      <div class="build">
-         <img src="assets/img/image 4.png" alt="#" class="buildImg">
-         <div class="buildTextContent">
-            <div class="buildTitle">
-               Полонини Карпат
-            </div>
-            <div class="lineHorizontal"></div>
-            <div class="buildText">
-               Полонини Карпат, у селі Орів посеред гір
-               розташувався затишний куточок для незабутніх
-               вражень. Справжні українські гори, власноручне
-               сироваріння на полонині, водоспади та
-               вікові дерева чекають на Вас.
-            </div>
-         </div>
-         <img src="assets/img/emojione_star.png" alt="star" class="star button">
-         <div class="details button">Детальніше</div>
-      </div>
-
-      <div class="build">
-         <img src="assets/img/image 6.png" alt="#" class="buildImg">
-         <div class="buildTextContent">
-            <div class="buildTitle">
-               Автентична Київщина
-            </div>
-            <div class="lineHorizontal"></div>
-            <div class="buildText">
-               Неподалік центра Києва розташувалось автентичне українське
-               село на території однойменного села Пирогово. Дерев’яні млини,
-               запашний хліб, приготовлений своїми руками, українські пісні та
-               багато іншого чекає на вас уже зараз.
-            </div>
-         </div>
-         <img src="assets/img/emojione_star.png" alt="star" class="star button">
-         <div class="details button">Детальніше</div>
-      </div>
-
-      <div class="build">
-         <img src="assets/img/image 7.png" alt="#" class="buildImg">
-         <div class="buildTextContent">
-            <div class="buildTitle">
-               Нетипова Одещина
-            </div>
-            <div class="lineHorizontal"></div>
-            <div class="buildText">
-               В Одеській області знаходиться мальовниче містечко Вилкове.
-               Його ще називають «українською Венецією». Вилкове - це містечко
-               на воді, весь в каналах. Розташоване в місці, де зустрічаються річка
-               Дунай і Чорне море. Люди пересуваються переважно човнами.
-               Нетипове українське село не залишить Вас без вражень.
-            </div>
-         </div>
-         <img src="assets/img/emojione_star.png" alt="star" class="star button">
-         <div class="details button">Детальніше</div>
-      </div>
-      <img src="assets/img/Component 10.png" alt="arrow" class="arrow button">
    </div>
    <div class="footer">
       <div class="footerText">© 2021 HolidayTime.  All rights reserved.</div>
    </div>
+   <script src="assets/js/script.js"></script>
 </body>
 </html>
