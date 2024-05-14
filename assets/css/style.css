@@ -3,6 +3,16 @@
    padding: 0;
    /* scrollbar-width: thin; */
 }
+
+@font-face{
+   font-family: 'FontAwesome';
+   src: url('./fontawesome-webfont.woff2') format('woff2');
+   font-weight: normal;
+   font-style: normal;
+}
+.icon{
+   font-family: "FontAwesome";
+}
 body{
    background-color: #DCDCDC;
 }
@@ -43,15 +53,8 @@ body{
 .logo{
    position: absolute;
    left: 70px;
-}
-.logoimg{
-   /* width: 178.45px; */
-   height: 70px;
-   /* position: absolute; */
-   /* top: 10px; */
-   /* left: 138px; */
-   /* margin-right: 100px; */
    border-radius: 167px;
+   height: 70px;
 }
 .headText{
    /* width: 1066px; */
@@ -141,7 +144,7 @@ body{
    margin-bottom: 50px;
    padding: 0;
    overflow: hidden;
-   transition: max-height 2s;
+   transition: height 0.5s;
 }
 .list a{
    text-decoration: none;
@@ -226,9 +229,9 @@ body{
    position: absolute;
    top: 15px;
    right: 15px;
-}
-.star2{
-   display: none;
+   color: white;
+   font-size: 43px;
+   user-select: none;
 }
 /* .star {
    margin: 50px 0; 
@@ -494,6 +497,9 @@ body{
    .list{
       width: 872px;
    }
+   .shadowLine{
+      width: 924px;
+   }
    .line{
       margin: 0 35px;
    }
@@ -549,6 +555,113 @@ body{
    }
    .headText{
       display: none;
+   }
+   .purple{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+   .purpleText{
+      position: initial;
+   }
+   .footer{
+      justify-content: center;
+   }
+   .footerText{
+      margin: 0;
+   }
+   .details{
+      position: initial;
+      margin-top: 20px;
+   }
+}
+@media (max-width: 910px){
+   .build{
+      padding: 15px 35px;
+   }
+   .buildTitle{
+      font-size: 28px;
+   }
+   .buildText{
+      font-size: 16px;
+      width: 500px;
+   }
+   .lineHorizontal{
+      width: 500px;
+   }
+   .buildImg{
+      width: 425px;
+      height: 214px;
+   }
+   .details{
+      font-size: 16px;
+      width: 160px;
+      height: 45px;
+   }
+   .chois{
+      width: 630px;
+   }
+   .list{
+      width: 630px;
+   }
+   .shadowLine{
+      width: 682px;
+   }
+}
+@media (max-width: 644px){
+   .buildTitle{
+      font-size: 22px;
+   }
+   .buildText{
+      font-size: 13px;
+      width: 280px;
+      height: 120px;
+      padding: 10px 20px;
+   }
+   .lineHorizontal{
+      width: 280px;
+      border: 1px white solid;
+   }
+   .buildImg{
+      width: 305px;
+      height: 153px;
+   }
+   .details{
+      font-size: 14px;
+      width: 120px;
+      height: 40px;
+   }
+   .star{
+      font-size: 28px;
+      right: 10px;
+   }
+   .arrow{
+      width: 80px;
+      height: 80px;
+   }
+   .footerText{
+      font-size: 25px;
+   }
+   .chois{
+      width: 390px;
+   }
+   .choisText{
+      font-size: 18px;
+   }
+   .list{
+      width: 390px;
+      height: 241px;
+   }
+   .list a{
+      font-size: 22px;
+   }
+   .shadowLine{
+      width: 442px;
+      height: 2px;
+   }
+   .triangle{
+      width: 20px;
+      height: 17px;
    }
 }
 
